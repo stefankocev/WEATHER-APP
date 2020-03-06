@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <i class="fas fa-cloud-sun-rain navbar-brand "></i>
+        <div class="collapse navbar-collapse">
+            <h1>Weather App</h1>
+            <ul class="navbar-nav ml-auto">
+                <a href="#" id="nav-home" class="nav-link ">Home</a>
+                <a href="#" id="nav-hourly" class="nav-link">Hourly Weather</a>
+                <a href="#" id="nav-about" class="nav-link">About</a>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                    id="search-bar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="search-button">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div id="home" class="containerPadding">
+        <div class="home-text">
+            <h1>Welcome to the weather app!</h1>
+            <p>This is a web application where you can see the weather for the next 5 days.</p>
+            <p id="statisctics"></p>
+        </div>
+    </div>
+    <div id="hourly-weather" class="pages containerPadding"></div>
+    <div id="about" class="pages containerPadding">
+        <p>This app was created through Java Script Advanced course</p>
+        <p>Stefan Kocev</p>
+        <p>Contact Number: +5898859992</p>
+        <p>FB:Stefan Kocev, Instagram: steffankocev</p>
+        <p>Copyright, 2020</p>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
